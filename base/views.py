@@ -27,3 +27,20 @@ def notas(request, alumn_id):
     }
     
     return render(request, 'notas.html', context)
+
+
+def faq(request):
+    faqs = models.Faq.objects.all()
+    context ={
+        'items': faqs
+    }
+    return render(request, 'faq.html', context)
+
+
+def about(request):
+    body = models.About.objects.all().first()
+    context = {
+        'about': body
+    }
+    
+    return render(request, 'about.html', context)

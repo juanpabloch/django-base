@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load wagtailcore_tags %}
+{% load wagtailimages_tags %}
+
+{% block content %}
+    <h1>{{about.title}}</h1>
+    {{about.body|richtext}}
+{% endblock content %}
+    
