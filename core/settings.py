@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'pruebawagtail',
+        'NAME': 'cms',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
