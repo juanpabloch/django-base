@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.shortcuts import render, redirect
 from base import models
 from django.contrib import messages
@@ -27,3 +28,7 @@ def notas(request, alumn_id):
     }
     
     return render(request, 'notas.html', context)
+
+
+def faq_page(request):
+    return render(request, 'faq.html', {})

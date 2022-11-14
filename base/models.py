@@ -1,6 +1,6 @@
 from django.db import models
-
-# Create your models here.
+from django.contrib.auth.models import User
+from datetime import datetime
 
 class Alumno(models.Model):
     nombre = models.CharField(max_length=255)

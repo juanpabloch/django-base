@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div id="video-container">
+        <h1>Pagina principal Alumnos</h1>
+        <p>esta es una pagina que nos va a mostar la nota de los alumnos</p>
+
+        <a href="{% url 'alumnos' %}">Ver Lista</a>
+
+        <div class="embed-responsive embed-responsive-21by9">
+            <video id="hero_video" class="embed-responsive-item" name='demo' controls width="90%">
+                <source src="https://g-cloud-latam.com/mailing/2022/cotr/video/0711/es.mp4" type="video/mp4"></source>
+            </video>
+        </div>
+    </div>
+
+{% endblock content %}
+        
