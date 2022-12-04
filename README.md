@@ -1,0 +1,1 @@
+# Proyecto base para proyecto django
