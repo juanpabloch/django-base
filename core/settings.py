@@ -38,13 +38,16 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'base',
+    'accounts',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'base'
+    
 ]
 
 MIDDLEWARE = [
@@ -114,6 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = "accounts.CustomUser"
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
@@ -134,9 +138,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-STATICFILES_DIR = [STATIC_DIR]
+STATICFILES_DIRS = [STATIC_DIR]
 
 MEDIA_ROOT = BASE_DIR / 'media'
 
